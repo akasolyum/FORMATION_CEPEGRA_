@@ -1,3 +1,19 @@
 :root {
   font-size: 16px;
 }
+
+body > main,
+body > footer {
+  display: none;
+}
+
+/* HEADER */
+
+body > header {
+  height: 200px;
+  background-color: black url(/css/img/banner.png) no-repeat center top;
+}
+
+body > header > h1 {
+  background-image: url(/css/img/logo.png);
+}
