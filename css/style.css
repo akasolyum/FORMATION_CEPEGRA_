@@ -76,11 +76,9 @@ main {
   margin-top: 40px;
 }
 main > section {
-  border: 3px solid red;
   flex-grow: 1;
-}
-main > asside {
-  border: 3px solid blue;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* article */
@@ -89,6 +87,7 @@ main > section > article {
   display: flex;
   flex-direction: column;
   width: 250px;
+  margin: 10px;
   background: linear-gradient(
     0deg,
     rgb(226, 226, 226) 140px,
@@ -113,10 +112,6 @@ main > section > article > a {
   color: rgb(66, 214, 224);
   text-decoration: none;
   align-self: flex-end;
-  /* padding: 1em 0 1em 0.5em;
-  margin-right: 0.5em;
-  padding-right: 56px;
-  background-image: url() no-repeat right center; */
   padding: 1em 56px 1em 0.5em;
   position: relative;
 }
