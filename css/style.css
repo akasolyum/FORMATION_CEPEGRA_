@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  font-size: 20px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* SITE HEADER */
+body > header {
+  background-color: rgb(247, 247, 249);
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+}
+
+body > header > div {
+  max-width: 1140px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+body > header > div > h1 {
+  margin: 0;
+}
+
+body > header > div > h1 > a {
+  display: block;
+  width: 178px;
+  height: 40px;
+  background: url("https://rockpi.org/assets/images/logo.png") no-repeat;
+
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+body > header > div > nav {
+  margin-left: auto;
+}
+
+body > header > div > nav a {
+  color: #373737;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+body > header > div > nav a.active,
+body > header > div > nav a:hover {
+  color: #79bd28;
+}
+
+body > header > div > nav > ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+}
+body > header > div > nav > ul > li {
+  margin: 0 20px;
+}
+
+/* SITE CONTENT */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > main {
+  max-width: 1140px;
+  width: 100%;
+}
+
+body > main > section {
+  position: relative;
+  display: flex;
+}
+
+body > main > section:nth-of-type(even) {
+  background: #f7f7f9;
+  flex-direction: row-reverse;
+}
+
+body > main > section:before {
+  position: absolute;
+  display: block;
+  content: " ";
+  background-color: inherit;
+  height: 100%;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+body > main > section > * {
+  width: 50%;
+}
+
+body > main > section > figure img {
+  max-width: 400px;
+}
+
+.btn {
+  display: inline-block;
+  background: #79bd28;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 24px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background: #0add67;
+}
